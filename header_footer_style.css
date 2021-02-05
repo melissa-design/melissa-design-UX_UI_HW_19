@@ -3,17 +3,30 @@
 @media only screen and (max-width: 1023px) {
     header {
         height: 4rem;
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+        overflow: hidden;
+    }
+    .mobileNav {
+        height: 100%;
+    }
+    .logocontainer {
+        height: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     nav {
         flex-direction: column;
-        padding: 1rem;
-        gap: 1rem;
     }
-    .headercontainer {
-        height: 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .menuitem {
+        padding: 1rem 0;
+    }
+    main {
+        padding-top: 2rem;
+    }
+    .cross {
+        display: none;
     }
 }
 
@@ -23,6 +36,10 @@
 @media only screen and (min-width: 1024px) {
     header {
         height: 4rem;
+    }
+    .headercontainer {
+        display: flex;
+        justify-content: space-between;
     }
     .logo {
         height: 4rem;
@@ -59,12 +76,8 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
     z-index: 1;
-}
-
-.headercontainer {
-    display: flex;
-    justify-content: space-between;
 }
 
 nav,
@@ -120,4 +133,5 @@ footer {
 .burger img {
     width: 27px;
     height: 18px;
+    margin: 16px 12px;
 }
