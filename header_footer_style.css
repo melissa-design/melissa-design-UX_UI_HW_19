@@ -1,104 +1,123 @@
-    /* Header small screens */
-    
-    @media only screen and (max-width: 1023px) {
-        header {
-            height: auto;
-        }
-        .logo {
-            display: none;
-        }
-        nav {
-            flex-direction: column;
-            padding: 1rem;
-            gap: 1rem;
-        }
-    }
-    /* Header large screens */
-    
-    @media only screen and (min-width: 1024px) {
-        header {
-            height: 4rem;
-        }
-        .logo {
-            height: 4rem;
-            padding: 0 2.5rem;
-            display: flex;
-            align-items: center;
-        }
-        nav {
-            flex-direction: row;
-        }
-        .menuitem {
-            padding: 0 2.5rem;
-            display: flex;
-            align-items: center;
-        }
-        main {
-            padding-top: 4rem;
-        }
-    }
-    /* Header and footer styles */
-    
+/* Header small screens */
+
+@media only screen and (max-width: 1023px) {
     header {
-        background-color: var(--secondary);
-        white-space: nowrap;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 1;
+        height: 4rem;
     }
-    
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
     .headercontainer {
+        height: 4rem;
         display: flex;
+        align-items: center;
         justify-content: space-between;
     }
-    
-    nav,
-    nav>* {
+}
+
+
+/* Header large screens */
+
+@media only screen and (min-width: 1024px) {
+    header {
+        height: 4rem;
+    }
+    .logo {
+        height: 4rem;
+        padding: 0 2.5rem;
         display: flex;
-    }
-    
-    .menuitem:hover {
-        background-color: var(--secondaryhighlight);
-    }
-    
-    .logo:hover {
-        background-color: var(--secondaryhighlight);
-    }
-    
-    .headercontainer,
-    .bodytextcontainer,
-    .narrowcontainer,
-    .footercontainer {
-        margin: 0 auto;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    
-    .headercontainer,
-    .footercontainer {
-        max-width: 1640px;
-    }
-    
-    .bodytextcontainer {
-        max-width: 1200px;
-    }
-    
-    .narrowcontainer {
-        max-width: 1024px;
-    }
-    
-    footer {
-        background-color: var(--secondary);
-        display: flex;
-    }
-    
-    .footercontainer {
-        display: flex;
-        justify-content: center;
         align-items: center;
     }
-    
-    .footer-button {
-        padding: 2rem;
+    nav {
+        flex-direction: row;
     }
+    .navcontainer {
+        display: flex;
+    }
+    .menuitem {
+        padding: 0 2.5rem;
+        display: flex;
+        align-items: center;
+    }
+    main {
+        padding-top: 4rem;
+    }
+    .burger,
+    .cross {
+        display: none;
+    }
+}
+
+
+/* Header and footer styles */
+
+header {
+    background-color: var(--secondary);
+    white-space: nowrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.headercontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav,
+nav>* {
+    display: flex;
+}
+
+.menuitem:hover {
+    background-color: var(--secondaryhighlight);
+}
+
+.logo:hover {
+    background-color: var(--secondaryhighlight);
+}
+
+.headercontainer,
+.bodytextcontainer,
+.narrowcontainer,
+.footercontainer {
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.headercontainer,
+.footercontainer {
+    max-width: 1640px;
+}
+
+.bodytextcontainer {
+    max-width: 1200px;
+}
+
+.narrowcontainer {
+    max-width: 1024px;
+}
+
+footer {
+    background-color: var(--secondary);
+    display: flex;
+}
+
+.footercontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-button {
+    padding: 2rem;
+}
+
+.burger img {
+    width: 27px;
+    height: 18px;
+}
