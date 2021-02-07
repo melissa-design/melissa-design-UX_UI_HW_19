@@ -6,7 +6,7 @@ $(document).ready(function() {
         $(".cross").show();
     });
 
-    $(".cross").click(function() {
+    $(".cross,.menuitem").click(function() {
         $("header").toggleClass("mobileNav");
         $(".cross").hide();
         $(".burger").show();
