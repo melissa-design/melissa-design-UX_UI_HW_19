@@ -80,6 +80,10 @@ header {
     z-index: 1;
 }
 
+.anchor {
+    scroll-margin-top: 4rem;
+}
+
 nav,
 nav>* {
     display: flex;
