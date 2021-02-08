@@ -67,9 +67,14 @@
     margin: 0 auto;
     max-width: 1256px;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.view-casestudy-button {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    transition: 0.6s ease-in-out;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 0);
 }
 
 .overlay {
@@ -80,11 +85,14 @@
     right: 0;
     height: 100%;
     width: 100%;
-    color: rgba(255, 255, 255, 0);
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
     transition: 0.6s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
 }
 
 .overlay h3 {
@@ -96,4 +104,14 @@
     transition: 0.6s ease-in-out;
     background-color: rgba(0, 0, 0, 0.7);
     color: rgba(255, 255, 255, 1);
+}
+
+.casestudy:hover .view-casestudy-button {
+    transition: 0.6s ease-in-out;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+.casestudy:hover .view-casestudy-button:hover {
+    text-decoration: underline;
 }
