@@ -51,3 +51,7 @@
 .grid-container-skills {
     grid-gap: 4rem;
 }
+
+.leaves {
+    width: 100%;
+}
