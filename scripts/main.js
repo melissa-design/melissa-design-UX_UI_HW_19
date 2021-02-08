@@ -6,10 +6,16 @@ $(document).ready(function() {
         $(".cross").show();
     });
 
-    $(".cross,.menuitem").click(function() {
+    $(".cross").click(function() {
         $("header").toggleClass("mobileNav");
         $(".cross").hide();
         $(".burger").show();
     });
 
+    $("body").on("click", "header.mobileNav .menuitem", function() {
+        alert('a')
+        $("header").toggleClass("mobileNav");
+        $(".cross").hide();
+        $(".burger").show();
+    });
 });
