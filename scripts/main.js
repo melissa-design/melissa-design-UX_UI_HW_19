@@ -13,7 +13,6 @@ $(document).ready(function() {
     });
 
     $("body").on("click", "header.mobileNav .menuitem", function() {
-        alert('a')
         $("header").toggleClass("mobileNav");
         $(".cross").hide();
         $(".burger").show();
