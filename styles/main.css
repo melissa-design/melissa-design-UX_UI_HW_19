@@ -31,13 +31,13 @@ html {
 
 @media screen and (max-width: 360px) {
     html {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
 @media screen and (min-width: 361px) and (max-width: 864px) {
     html {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
