@@ -99,28 +99,6 @@ nav>* {
     color: black;
 }
 
-.headercontainer,
-.bodytextcontainer,
-.narrowcontainer,
-.footercontainer {
-    margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.headercontainer,
-.footercontainer {
-    max-width: 1640px;
-}
-
-.bodytextcontainer {
-    max-width: 1200px;
-}
-
-.narrowcontainer {
-    max-width: 1024px;
-}
-
 footer {
     background-color: var(--secondary);
     white-space: nowrap;
