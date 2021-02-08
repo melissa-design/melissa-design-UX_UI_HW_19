@@ -145,7 +145,12 @@ body {
 
 /* links */
 
-a {
+header a {
     text-decoration: none;
     color: var(--text)
+}
+
+a {
+    text-decoration: underline;
+    color: #283593
 }

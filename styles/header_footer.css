@@ -91,10 +91,12 @@ nav>* {
 
 .menuitem:hover {
     background-color: var(--secondaryhighlight);
+    color: black;
 }
 
 .logo:hover {
     background-color: var(--secondaryhighlight);
+    color: black;
 }
 
 .headercontainer,
