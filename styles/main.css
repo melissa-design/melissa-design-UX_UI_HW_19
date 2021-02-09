@@ -71,13 +71,11 @@ h1,
 h2,
 .h2 {
     font-size: 3rem;
-    /* font-weight: bold; */
 }
 
 h3,
 .h3 {
     font-size: 2rem;
-    /* font-weight: bold; */
 }
 
 h4,
@@ -161,24 +159,24 @@ footer a {
 
 /* Containers */
 
-.headercontainer,
-.bodytextcontainer,
-.narrowcontainer,
-.footercontainer {
-    margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.full-width {
+    width: 100%;
 }
 
-.headercontainer,
-.footercontainer {
+.large-width {
     max-width: 1640px;
 }
 
-.bodytextcontainer {
+.medium-width {
     max-width: 1200px;
 }
 
-.narrowcontainer {
+.small-width {
     max-width: 1024px;
+}
+
+.centered-padded {
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
