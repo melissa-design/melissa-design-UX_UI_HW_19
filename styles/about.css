@@ -26,15 +26,15 @@
             }
             
             .styled-text h1 {
-                margin-top: 2rem;
+                /* margin-top: 2rem; */
             }
             
             .styled-text h2 {
-                margin-top: 3rem;
+                /* margin-top: 3rem; */
             }
             
             .styled-text h3 {
-                margin-top: 1.6rem;
+                /* margin-top: 1.6rem; */
             }
             
             .styled-text ul {
@@ -66,8 +66,8 @@
             
             .journey-grid {
                 display: grid;
-                gap: 2rem;
-                align-items: center;
+                gap: 4rem;
+                /* align-items: center; */
                 grid-template-columns: 2fr 1fr;
             }
             
@@ -91,4 +91,9 @@
             
             .background1 {
                 background-color: #CBE2DA;
+            }
+            
+            .card img {
+                padding-bottom: 0.5rem;
+                margin:
             }
